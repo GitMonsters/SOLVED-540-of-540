@@ -1,5 +1,19 @@
 # 🧩 ARC-AGI — 540/540 (100%)
 
+<p align="center">
+  <img src="banner.svg" alt="TranscendPlexity — 540/540" width="840"/>
+</p>
+
+<p align="center">
+  <a href="#scores"><img src="https://img.shields.io/badge/ARC--AGI--1-400%2F400-brightgreen?style=for-the-badge" alt="AGI-1: 400/400"/></a>
+  <a href="#scores"><img src="https://img.shields.io/badge/ARC--AGI--2-120%2F120-blue?style=for-the-badge" alt="AGI-2: 120/120"/></a>
+  <a href="#scores"><img src="https://img.shields.io/badge/ARC--AGI--3-20%2F20-purple?style=for-the-badge" alt="AGI-3: 20/20"/></a>
+  <br/>
+  <a href="#verification-protocol"><img src="https://img.shields.io/badge/Verified-514%20solvers-success?style=flat-square&logo=python&logoColor=white" alt="514 verified solvers"/></a>
+  <a href="https://arcprize.org"><img src="https://img.shields.io/badge/ARC%20Prize-arcprize.org-orange?style=flat-square" alt="ARC Prize"/></a>
+  <a href="#license"><img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="MIT License"/></a>
+</p>
+
 **514 standalone Python solvers covering every public ARC-AGI evaluation task ever released.**
 
 Built by [TranscendPlexity](https://transcendplexity.com) — the first system to achieve perfect scores across all three ARC-AGI benchmarks.
