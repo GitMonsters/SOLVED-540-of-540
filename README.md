@@ -58,6 +58,12 @@ arc-puzzle-catalog/
 │   ├── {task_id}/
 │   │   └── solver.py       # solve(grid) → grid
 │   └── ...
+├── arc3/                    # ARC-AGI-3 game agent (20/20)
+│   ├── agent.py             # OctoTetraAgent — StateGraph BFS
+│   ├── solver.py            # Ls20Solver — semantic state-space BFS
+│   ├── computer_use.py      # Game state capture + action execution
+│   ├── run.py               # CLI runner
+│   └── README.md            # Architecture and usage docs
 ├── dataset/                 # ARC puzzle JSON data (public)
 │   └── tasks/               # 1,149 individual task files
 ├── viz/                     # HTML grid visualizations
@@ -121,12 +127,16 @@ The key insight: program synthesis produces **readable, verifiable** solutions. 
 
 ## ARC-AGI-3 (Interactive)
 
-The 20/20 score on ARC-AGI-3 was achieved using the same underlying approach adapted for interactive game environments. The agent:
+The 20/20 score on ARC-AGI-3 was achieved using the same underlying approach adapted for interactive game environments. See [`arc3/README.md`](arc3/README.md) for full architecture details.
+
+The agent:
 
 - Reverse-engineered 3,700 lines of obfuscated game source code
 - Decoded hidden physics and game mechanics
 - Built solvers using A*, symbolic BFS, and direct game-state manipulation
-- Completed 3 games × ~7 levels each — all from a single prompt with zero human guidance
+- Completed 3 games (FT09, LS20, VC33) × ~7 levels each — all from a single prompt with zero human guidance
+
+Key components: **OctoTetraAgent** (StateGraph BFS exploration), **Ls20Solver** (semantic state-space search), **GF(2) toggle solver** (linear algebra for lights-out puzzles), and **splash screen detection** for chaining level completions.
 
 ## License
 
