@@ -1,8 +1,8 @@
 # ARC-AGI-3 Game Agent — `arc3/`
 
-**20 / 20 — All levels completed across 3 interactive games.**
+**Measured result on real ARC-AGI-3 levels: 2 / 183.**
 
-This package implements the **OctoTetraAgent**, the autonomous game-solving agent that achieved a perfect score on the ARC-AGI-3 Interactive Sandbox.
+This package implements the **OctoTetraAgent**, an autonomous game-solving agent for ARC-AGI-3-style interactive environments.
 
 ## Why a Game Agent Instead of Static Solvers?
 
@@ -51,7 +51,7 @@ You can't write a static `solve()` function for a game — you need an **agent**
 | **LS20** | ~7 | Navigation/logic puzzles with semantic states |
 | **VC33** | ~6 | Pattern/toggle puzzles requiring algebraic reasoning |
 
-**Total: 20 levels, 20 completions, zero human guidance.**
+**Historical sandbox/demo runs covered 20 levels, but independent testing on real ARC-AGI-3 levels measured 2/183.**
 
 ## Module Overview
 
@@ -88,7 +88,7 @@ The agent was given a **six-word prompt** and zero human guidance. It:
 1. **Reverse-engineered** 3,700 lines of obfuscated game source code
 2. **Decoded hidden physics** — gravity rules, toggle mechanics, navigation constraints
 3. **Built solvers** using A*, symbolic BFS, and direct game-state manipulation
-4. **Completed all 20 levels** autonomously across three different game paradigms
+4. **Completed 20 sandbox/demo levels** autonomously across three different game paradigms (separate from the 2/183 real-level measurement)
 
 This is the same reasoning engine that solves static grid puzzles (AGI-1/2) — adapted to handle interactive, stateful environments.
 
