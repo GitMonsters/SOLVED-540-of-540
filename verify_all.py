@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify all 514 solvers against their test cases."""
+"""Verify all 562 solvers against their test cases."""
 
 import importlib.util
 import json
